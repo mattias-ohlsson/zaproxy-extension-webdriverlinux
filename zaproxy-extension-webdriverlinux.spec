@@ -5,7 +5,7 @@
 %global addon_folder webdrivers/%{extension_id}
 
 Name:           zaproxy-extension-%{extension_id}
-Version:        16
+Version:        17
 Release:        1%{?dist}
 Summary:        %{extension_name} extension
 
@@ -38,5 +38,8 @@ install -m 644 addOns/%{addon_folder}/build/zapAddOn/bin/*-%{version}.zap \
 %{_datadir}/zaproxy/plugin/*-%{version}.zap
 
 %changelog
+* Fri Feb 28 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 17-1
+- Update to 17
+
 * Wed Feb 26 2020 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 16-1
 - Initial build
